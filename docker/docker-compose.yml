@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  study-db:
+    image: postgres:14.6
+    ports:
+      - "54321:5432"
+    environment:
+      - POSTGRES_DB=study
+      - POSTGRES_USER=study
+      - POSTGRES_PASSWORD=study
+      - TZ=UTC
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
