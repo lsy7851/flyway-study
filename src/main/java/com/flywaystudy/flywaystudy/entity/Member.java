@@ -19,4 +19,6 @@ public class Member {
   private String phoneNumber;
 
   private int age;
+
+  private String address;
 }
